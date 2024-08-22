@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-    <header>
+    <header> 
         <nav>
             <table>
-                <tr>
+                <tr class="th">
                     <th><a href="acceuil.html">accueil </a></th>
                     <th><a href="profil.html">profil</a></th>
-                    <th><a href="Veuille Technologique.html">veille Technologique</a></th>
-                    <th><a href="GLPI.html">Gestion de patrimoine</a></th>
-                    <th><a href="BTS_SIO.html".html">BTS SIO</a></th>
-                    <th><a href="contact.html">contact</a></th>
+                    <th><a href="BTS_SIO.html">BTS SIO</a></th>
                     <th><a href="documentation.html">Documentations</a></th>
+                    <th><a href="situation.html">Situations professionnelles</a></th>
+                    <th><a href="GLPI.html">Gestion de patrimoine</a></th>
+                    <th><a href="Veuille-Technologique.html">veille Technologique</a></th>
+                    <th><a href="contact.html">contact</a></th>
                 </tr>
             </table>
         </nav>
     </header>
-    <div class="mini-presentation">
-        <h3>BONJOUR,</h3>
-        <h2>Je m'appelle Amélé Sandrine AGBOMEDJI</h2>
-        <p>je suis étudiante en BTS SIO option SISR </p>
-    </div>
-    <a href="profil.html" class="lien">en savoir plus</a></div>
-        
+    <script>
+        document.querySelectorAll('th a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+   
+    <div class="img-container">
+        <img src="../images/Cable-unsplashRe.jpg" alt="fond-accueil" width="1900" class="img-accueil">
+        <div class="mini-presentation">
+            <h3>BONJOUR,</h3>
+            <h2>Je m'appelle Amélé Sandrine AGBOMEDJI</h2>
+            <p>je suis étudiante en BTS SIO option SISR </p>
+            <a href="profil.html" class="lien">en savoir plus</a> 
+        </div>
+     
      
      
     
+    
+
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
     
 </body>
 </html>

@@ -4,26 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
 </head>
 <body>
-    <header>
+    <header> 
         <nav>
             <table>
-                <tr>
-                    <th class="selection">
+                <tr class="th">
                     <th><a href="acceuil.html">accueil </a></th>
                     <th><a href="profil.html">profil</a></th>
-                    <th><a href="Veuille Technologique.html">veille Technologique</a></th>
-                    <th><a href="GLPI.html">Gestion de patrimoine</a></th>
                     <th><a href="BTS_SIO.html">BTS SIO</a></th>
-                    <th><a href="contact.html">contact</a></th>
                     <th><a href="documentation.html">Documentations</a></th>
+                    <th><a href="situation.html">Situations professionnelles</a></th>
+                    <th><a href="GLPI.html">Gestion de patrimoine</a></th>
+                    <th><a href="Veuille-Technologique.html">veille Technologique</a></th>
+                    <th><a href="contact.html">contact</a></th>
                 </tr>
             </table>
         </nav>
     </header>
-    <p>le BTS SIO </p>
-    
+    <script>
+        document.querySelectorAll('th a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+    <h1>Le BTS SIO</h1>
+    <p1>le BTS SIO conçu pour répondre aux attentes des entreprises en remplacement au BTS IG, le BTS SIO est un diplôme délivrer par l'éducation nationale qui se sépare en deux ans,il est principalement 
+        destinées aux étudiants souhaitant se former aux métiers d'administrateur réseau  ou de développeur.il propose deux options qui sont de l'aoption A (SISR )et l'optionB(SLAM) 
+        à l'issue desquelles l'étudiant peut soit intégrer le monde du travail ou continuer en L3 : </p1>
+    <div class="contianer">
+        <div class="option1">
+            <br>
+            <p2>l'optionA: SISR Solutions d'Infrastructures Systèmes Réseaux elle est déstinées aux amoureux du réseau et des équipements informatiques
+                (installation maintenance et sécurité)le diplômé d'un BTS SIO option SISR sera en mésure de gérer et administrer le réseau d'une société et  d'en assurer la sécurité ainsi que  sa maintenance.  </p2>
+            <p3>à l'issue de cette formation vous aurez ces choix de bébouchés: </p3>
+            <ul>
+                <li>administrateur systèmes et réseaux</li>
+                <li>Analyste d’exploitation informatique</li>
+                <li>Gestionnaire du parc informatique de l’entreprise</li>
+                <li>Pilote d’exploitation</li>
+                <li>Technicien des réseaux de télécommunications</li>
+                <li>Technicien d’infrastructure</li>
+                <li>Technicien systèmes et réseaux</li>
+            </ul>
+        </div>
+        <div class="option2">
+            <p4>L'option SLAM: Solutions Logicielles et Applications Métiers distinée aux amoureux du code, savoir réaliser, valider des applications et rédiger
+                de la documentation explicative et technique sont les compétances à acquérir o la fin de cette formation . </p4>
+            <br>
+            <p5>à l'issue de cette formation les choix de débouchés sont les suivants:</p5>
+            <ul>
+                <li>analyste-programmeur</li>
+                <li>Developpeur informatique</li>
+                <li>Developpeur d'applications informatiques</li>
+                <li>Informaticien d'études</li>
+                <li>Programmeur</li>
+                <li>Technicien informatique</li>
+                <li>Responsable des services applicatifs</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

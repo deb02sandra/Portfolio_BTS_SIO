@@ -10,6 +10,7 @@ nav th{
     color:#fff;
 }*/
 table {
+    margin-top: 50px;
     padding:20px 5px 5px 0%;
     display: flex;
     justify-content: center;
@@ -19,34 +20,49 @@ table {
 
 }
 body {
-    height: 200vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement le contenu */
+    align-items: center; /* Centre horizontalement le contenu */
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+    box-sizing: border-box;
 }
 
 tr{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 
 header {
     color:beige;
 }
-
-    
+ 
 th a {
     color: #000;
     text-decoration: none;
+}
 
+.th a:hover,
+.th a.active { /* Style pour hover et l'élément actif */
+    color: #555;
+    background-color:chocolate;
+    margin: 20px;
+    padding: 15px 25px; /* Maintient le padding pour l'état actif */
+    width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur */
 }
-a:active{
-    color:orangered;
-}
+
 th a:hover {
     background-color: chocolate;
     padding:14px 22px;
+    margin: 20px;
 }
 
 .mini-presentation{
@@ -58,18 +74,165 @@ th a:hover {
     font-size: 20px;
 }
 
+.icône-plan{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    padding: 10px;
+    margin-top: -100px;
+    margin-left: 1000px;
+}
+
+.mail-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -60px;
+}
+.icon-text {
+    margin-left: 60px; /* Ajustez cette valeur en fonction de la distance souhaitée */
+    position: relative; /* Assurez-vous que le texte reste positionné par rapport à l'icône */
+    top: -60px; /* Alignez le texte avec l'icône */
+}
+
+.form-container{
+    margin-top: 200px;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+}
+.icon-container {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0px;/* Ajustez cette valeur selon la taille de vos icônes */
+    left: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+
+
+.footer{
+    margin: auto;
+    display: flex;
+    background-color: chocolate;
+    padding: 10px;
+    justify-content: space-between;
+    margin: 50px;
+}
+.footer span {
+    flex-basis: 45%;
+    
+}
+.footer span:last-child{
+    text-align: right;
+}
+
 .lien{
     display: inline-block;
     background-color: blueviolet;
-    color: rgb(144, 147, 141);
+    color:chocolate;
     font-size: 16px; 
     text-align: center; 
     text-decoration: none; 
     border-radius: 5px; 
-    margin: 50px;
-    margin-left: 900px;
-    margin-top: 0px;
-
-    
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 0px; 
+    padding: 0;
 }
+.lien:hover{
+    background-color: transparent; /* Rend le fond du bouton transparent */
+    color: aqua;
+    border: solid;
+
+}
+
+form{
+
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 50px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 20px;
+}
+
+input[type="submit"]{
+    background-color: gray;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background-color: chocolate;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid 
+}
+.img-accueil{
+    margin-top: 30px;
+}
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+.img-accueil{
+    display: block;
+    height: auto;
+}
+.mini-presentation {
+    position: absolute;
+    top: 10%; /* Centrer verticalement */
+    left: 20%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour centrer précisément */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+    padding: 40px; /* Espacement autour du texte */
+    border-radius: 10px; /* Coins arrondis pour un meilleur effet visuel */
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les deux colonnes */
+}
+
+.option1 {
+    width: 48%; /* Chaque colonne prend environ la moitié de la largeur du conteneur */
+    background-color: #f9f9f9; /* Ajoute un fond léger pour chaque section */
+    padding: 20px; /* Ajoute du padding interne */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+    margin-top: 50px;
+}
+.option2 {
+    width: 48%; /* Chaque colonne prend environ la moitié de la largeur du conteneur */
+    padding: auto; /* Ajoute du padding interne */
+    margin-left: 500px;
+    margin-top: -350px;
+}
+
 
